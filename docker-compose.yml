@@ -1,3 +1,4 @@
+version: "3.8"
 
 services:
   # 🐇 RabbitMQ service
@@ -36,10 +37,8 @@ services:
   # 👤 Auth Service
   auth:
     build: ./auth
-    environment:
-      - MONGODB_AUTH_URI=mongodb://mymongodb:27017/authDB
-      - JWT_SECRET=mysecretkey
-      - RABBITMQ_URL=amqp://rabbitmq
+    env_file:
+      - ./auth/.env
     depends_on:
       - mymongodb
       - rabbitmq
@@ -51,9 +50,8 @@ services:
   # 📦 Product Service
   product:
     build: ./product
-    environment:
-      - MONGODB_PRODUCT_URI=mongodb://mymongodb:27017/productDB
-      - RABBITMQ_URL=amqp://rabbitmq
+    env_file:
+      - ./product/.env
     depends_on:
       - mymongodb
       - rabbitmq
@@ -65,9 +63,8 @@ services:
   # 🧾 Order Service
   order:
     build: ./order
-    environment:
-      - MONGODB_ORDER_URI=mongodb://mymongodb:27017/orderDB
-      - RABBITMQ_URL=amqp://rabbitmq
+    env_file:
+      - ./order/.env
     depends_on:
       - mymongodb
       - rabbitmq

@@ -23,3 +23,8 @@ Test API trên POSTMAN
 <img src = "public/img/img8.png"></img>
 <img src = "public/img/img9.png"></img>
 
+8. Xem danh sách sản phẩm
+<img src = "public/img/img10.png"></img>
+
+9. Tạo 1 order thành công
+<img src = "public/img/img11.png"></img>

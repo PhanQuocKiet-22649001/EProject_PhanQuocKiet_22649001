@@ -1,20 +1,25 @@
 Test API trên POSTMAN
 
 1. Register thành công
-![alt text](public/img/img1.png)
-![alt text](image.png)
+<img src = "public/img/img1.png"></img>
+<img src = "public/img/img7.png"></img>
 
 2. Register thất bại do username tồn tại 
-![alt text](image.png)
+<img src = "public/img/img2.png"></img>
 
 3. login thành công, trả về token
-![alt text](image-1.png)
+<img src = "public/img/img3.png"></img>
 
 4. login thất bại: username không tồn tại
-![alt text](image-2.png)
+<img src = "public/img/img4.png"></img>
 
 5. login thất bại: sai pass
-![alt text](image-3.png)
+<img src = "public/img/img5.png"></img>
 
 6. Xem Dashboard thành công
-![alt text](image.png)
+<img src = "public/img/img6.png"></img>
+
+7. Thêm product thành công
+<img src = "public/img/img8.png"></img>
+<img src = "public/img/img9.png"></img>
+

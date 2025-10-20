@@ -28,3 +28,4 @@ Test API trên POSTMAN
 
 9. Tạo 1 order thành công
 <img src = "public/img/img11.png"></img>
+<img src = "public/img/img12.png"></img>

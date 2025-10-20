@@ -10,6 +10,8 @@ class ProductController {
   constructor() {
     this.createOrder = this.createOrder.bind(this);
     this.getOrderStatus = this.getOrderStatus.bind(this);
+
+
     this.ordersMap = new Map();
 
   }
@@ -109,6 +111,8 @@ class ProductController {
       res.status(500).json({ message: "Server error" });
     }
   }
+
+
 }
 
 module.exports = ProductController;

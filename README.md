@@ -30,3 +30,6 @@ Test API trên POSTMAN
 <img src = "public/img/img11.png"></img>
 <img src = "public/img/img12.png"></img>
 <img src = "public/img/img13.png"></img>
+
+10. Tìm sản phẩm theo ID
+<img src = "public/img/img14.png"></img>

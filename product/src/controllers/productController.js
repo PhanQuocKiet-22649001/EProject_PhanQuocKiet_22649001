@@ -11,6 +11,7 @@ class ProductController {
     this.createOrder = this.createOrder.bind(this);
     this.getOrderStatus = this.getOrderStatus.bind(this);
 
+    this.getProductById = this.getProductById.bind(this);
 
     this.ordersMap = new Map();
 
@@ -112,6 +113,27 @@ class ProductController {
     }
   }
 
+// Tìm sản phẩm theo ID
+  async getProductById(req, res, next) {
+    try {
+      const token = req.headers.authorization;
+      if (!token) {
+        return res.status(401).json({ message: "Unauthorized" });
+      }
+
+      const { id } = req.params;
+      const product = await Product.findById(id);
+
+      if (!product) {
+        return res.status(404).json({ message: "Product not found" });
+      }
+
+      res.status(200).json(product);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: "Server error" });
+    }
+  }
 
 }
 

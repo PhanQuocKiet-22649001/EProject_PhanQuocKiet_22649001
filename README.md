@@ -1,5 +1,11 @@
-Test API trên POSTMAN
+- Các URL sử dụng PORT 3003 của API GateWay sau đó API GateWay sẽ định tuyến về các dịch vụ tương ứng thông qua các endpoint và sử dụng port tương ứng của các dịch vụ đó:
+- Các endpoint tương ứng: 
+auth: /auth
+product: /products
+order: /orders
 
+
+Test API trên POSTMAN: 
 1. Register thành công
 <img src = "public/img/img1.png"></img>
 <img src = "public/img/img7.png"></img>
@@ -33,3 +39,5 @@ Test API trên POSTMAN
 
 10. Tìm sản phẩm theo ID
 <img src = "public/img/img14.png"></img>
+11. Tìm sản phẩm theo ID thất bại
+<img src = "public/img/img15.png"></img>

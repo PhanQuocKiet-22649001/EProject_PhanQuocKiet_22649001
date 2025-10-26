@@ -27,7 +27,7 @@ Test API trên POSTMAN:
 <img src = "public/img/img6.png"></img>
 
 
-Từ phần số 7 về sau sẽ gửi kèm token authorization cũng được trả về ở bước login: Beaer token (có khoảng trắng)
+Từ phần số 7 về sau sẽ gửi kèm token authorization cũng được trả về ở bước login: Bearer token (có khoảng trắng)
 7. Thêm product thành công
 <img src = "public/img/img8.png"></img>
 <img src = "public/img/img9.png"></img>
